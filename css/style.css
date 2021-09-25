@@ -1,0 +1,1601 @@
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/JosefinSans-Regular.otf") format("otf"),
+        url("../fonts/JosefinSans-Regular.ttf") format("truetype");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+pre {
+    position: relative;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "PT Sans", sans-serif;
+    color: #394B5E;
+    background: #C7D3DF;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #394B5E;
+}
+
+a:hover {
+    color: #BA601B;
+}
+
+.link {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    margin: 10px 30px;
+}
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+    min-width: 720px;
+    min-height: 800px;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    background: black;
+    color: #E5EBF1;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 5px 0 5px;
+    color: #E5EBF1;
+    font-size: .9em;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+nav ul li a:hover {
+    color: #FFE891;
+}
+
+nav .user_menu {
+    width: 180px;
+    float: right;
+}
+
+nav ul.main_menu li:first-child a {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 8px;
+}
+
+nav ul.main_menu li:first-child a span {
+    background: #E5EBF1;
+    height: 25px;
+    width: 25px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    color: black;
+    padding: 6px 5px;
+    font-size: 1.3em;
+}
+
+ul.main_menu li:first-child a.active {
+    cursor: default;
+    pointer-events: none;
+}
+
+ul.main_menu li:first-child a.active span {
+    background: #86A0BC;
+    cursor: default;
+}
+
+nav ul.main_menu li:first-child a.active:hover span {
+    background: #86A0BC;
+}
+
+nav ul.main_menu li:first-child a:hover span {
+    background: #FFE891;
+}
+
+ul.user_menu li a.active,
+ul.main_menu li a.active {
+    color: #86A0BC;
+    cursor: default;
+    pointer-events: none;
+}
+
+content {
+    width: 100%;
+    min-height: 800px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body.mak {
+    background: #E5EBF1;
+}
+
+.latka {
+    position: absolute;
+    background: #C7D3DF;
+    z-index: 3;
+    top: 40px;
+    right: 0;
+    left: 250px;
+    bottom: 0;
+}
+
+content .content {
+    margin-left: 250px;
+    padding: 10px;
+    position: relative;
+    text-align: justify;
+    background: #C7D3DF;
+    min-height: 800px;
+    z-index: 4;
+    font-size: 16pt !important;
+    line-height: 1.5 !important;
+}
+
+content .content h3 {
+    margin: 15px;
+}
+
+content .content h3 a {
+    width: 300px;
+    text-align: center;
+}
+
+content .content p {
+    margin: 5px 5px 10px 5px;
+    position: relative;
+    line-height: 1.5 !important;
+}
+
+.read_more {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.read_more:hover {
+    cursor: pointer;
+    color: #BA601B;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bad {
+    text-decoration: line-through;
+}
+
+.center {
+    text-align: center;
+}
+
+content .content ul {
+    margin: 5px 5px 10px 25px;
+}
+
+content .content ul li {
+    list-style-type: circle;
+    line-height: 1.3;
+}
+
+content .content table.simple {
+    margin: 10px;
+}
+
+content .content table.simple tr td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+content .nav_middle {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+    background: #E5EBF1;
+    color: #556F8A;
+    width: 250px;
+    z-index: 5;
+    min-height: 800px;
+}
+
+content .nav_middle .mak_list li a {
+    color: #2E3B49;
+    display: block;
+    padding: 7px;
+}
+
+content .nav_middle .mak_list li a:hover {
+    color: white;
+    background: #74879B;
+}
+
+content .nav_middle .mak_list li a.active {
+    color: white;
+    background: #C7D3DF;
+    cursor: default;
+}
+
+content .nav_middle .mak_list li a.active:hover {
+    color: white;
+    background: #C7D3DF;
+    cursor: default;
+}
+
+/* MAK */
+
+.imgs {
+    text-align: center;
+}
+
+.imgs .img_info img {
+    width: 30%;
+}
+
+.buttons {
+    width: 430px;
+    margin: 30px auto 0;
+    padding: 10px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.buttons .go_cards {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.go_cards {
+    color: #394B5E;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.go_cards:hover {
+    color: #BA601B;
+    cursor: pointer;
+}
+
+.go_cards.next {
+    width: 140px;
+    margin: 20px auto;
+}
+
+.bold_str {
+    color: #394B5E;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/* Instructions */
+
+content .nav_middle .mak_ins_list li {
+    color: #2E3B49;
+    display: block;
+    padding: 7px;
+    position: relative;
+}
+
+content .nav_middle .mak_ins_list li:hover {
+    color: white;
+    background: #74879B;
+    cursor: pointer;
+}
+
+content .nav_middle .mak_ins_list li.active {
+    color: white;
+    background: #C7D3DF;
+    cursor: default;
+}
+
+content .nav_middle .mak_ins_list li.active:hover {
+    color: white;
+    background: #C7D3DF;
+    cursor: default;
+}
+
+content .ins .tabs > div {
+    display: none;
+}
+
+content .ins .tabs > div.active {
+    display: block;
+}
+
+content .content_mak {
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 1215px;
+    margin: 0 auto;
+    min-height: 800px;
+}
+
+content .content_mak p {
+    text-align: justify;
+    line-height: 1.3em;
+    margin: 10px;
+    font-size: 16pt !important;
+}
+
+/* Cards Sizes */
+
+content .content_mak ul.mak_1.time li,
+content .content_mak ul.mak_1.time li img {
+    width: 290px;
+    height: 435px;
+}
+
+content .content_mak ul.mak_1.person li,
+content .content_mak ul.mak_1.person li img {
+    width: 290px;
+    height: 407px;
+}
+
+content .content_mak ul.mak_1.oh li,
+content .content_mak ul.mak_1.oh li img {
+    width: 290px;
+    height: 422px;
+}
+
+/* Cards */
+
+content .content_mak ul.mak_1 {
+    position: relative;
+    overflow: hidden;
+}
+
+content .content_mak ul.mak_1 li {
+    list-style-type: none;
+    float: left;
+    margin: 5px;
+}
+
+content .content_mak ul.mak_1 li img {
+    outline: 1px solid #394B5E;
+}
+
+content .content_mak ul.mak_1 li img:hover {
+    border: 3px solid #6D7A87;
+    cursor: pointer;
+}
+
+content .content_mak ul.mak_1 li img.chosen {
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+    filter: sepia(100%);
+    border: 3px solid #6D7A87;
+}
+
+/* Working with cards */
+
+content .cards .new_table {
+    min-height: 2500px;
+}
+
+content .content_mak .new_img {
+    width: 290px;
+    height: 435px;
+    margin: 5px;
+    display: inline-block;
+    outline: 1px solid #394B5E;
+}
+
+content .content_mak .new_img:hover {
+    border: 3px solid #6D7A87;
+    cursor: pointer;
+}
+
+/* TESTS */
+content .content p.cent {
+    text-align: center;
+}
+
+content .content ul.test {
+    position: relative;
+    overflow: hidden;
+    float: none;
+    text-align: center;
+    margin: 10px auto;
+}
+
+content .content ul.test li {
+    list-style-type: none;
+    float: none;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+content .content ul.test li img {
+    outline: 1px solid #6D7A87;
+}
+
+content .content ul.test li img:hover {
+    border: 3px solid #6D7A87;
+    cursor: pointer;
+}
+
+content .content ul.test li img.active {
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+    filter: sepia(100%);
+    border: 3px solid #6D7A87;
+}
+
+content .content .result {
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.5 !important;
+}
+
+content .content .t_img {
+    float: left;
+    margin: 0 20px;
+}
+
+/* Tests no img */
+
+content .content ul.no_img {
+    min-width: 400px;
+    margin: 0;
+    text-align: left;
+}
+
+content .content ul.no_img li {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+}
+
+content .content ul.no_img li span:hover {
+    color: #BA601B;
+    cursor: pointer;
+}
+
+content .content ul.no_img li span.active {
+    color: #627589;
+    cursor: default;
+}
+
+/* Tests Character Tabs */
+
+.tabs {
+    overflow: hidden;
+}
+
+.tabs .result div:not(.active) {
+    display: none;
+}
+
+.tabs .result div.active {
+    display: block;
+}
+
+body.tests .tabs .result p.bold {
+    text-align: center;
+}
+
+/* Tests Character */
+content .content ul.char {
+    width: 370px;
+}
+
+content .content ul.char li,
+content .content ul.char li img {
+    width: 112px;
+    height: 112px;
+}
+
+/* Tests Kill */
+
+content .content ul.kill {
+    width: 600px;
+}
+
+content .content ul.kill li,
+content .content ul.kill li img {
+    width: 73px;
+    height: 73px;
+}
+
+/* Tests Animals */
+
+content .content ul.anim {
+    width: 843px;
+}
+
+content .content ul.anim li,
+content .content ul.anim li img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Tests Eyes */
+
+content .content ul.eyes {
+    width: 527px;
+}
+
+content .content ul.eyes li,
+content .content ul.eyes li img {
+    width: 165px;
+    height: 165px;
+}
+
+/* Taro IMGS Radio */
+
+content .content ul.taro {
+    width: 100%;
+    max-width: 800px;
+}
+
+content .content ul.taro.minor {
+    max-width: 500px;
+}
+
+content .content ul.taro li,
+content .content ul.taro li img {
+    width: 63px;
+    height: 100px;
+}
+
+
+/* TARO */
+
+.forms > div {
+    display: none;
+}
+
+.forms > div.active {
+    display: block;
+}
+
+.frm_date {
+    overflow: hidden;
+    text-align: center;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 700px;
+}
+
+.frm_date p {
+    margin-bottom: 10px;
+}
+
+.frm_date input {
+    width: 200px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 0;
+    border: 0;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.frm_date .btn_taro {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    padding: 12px;
+    margin: 20px;
+    text-transform: uppercase;
+    background: #667E98;
+    color: #C7D3DF;
+    text-align: center;
+}
+
+.frm_date .btn_taro:hover {
+    cursor: pointer;
+    color: white;
+    background: #344353;
+}
+
+.taroNav {
+    width: 800px;
+    margin: 20px auto;
+    height: 40px;
+    text-align: center;
+    color: #394B5E;
+    font-weight: bold;
+    display: block;
+}
+
+.taroNav li.active {
+    color: #627589;
+    cursor: default;
+    pointer-events: none;
+}
+
+.taroNav li.active:hover {
+    color: #627589;
+    cursor: default;
+}
+
+.taroNav li {
+    color: #394B5E;
+    font-size: .9em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.taroNav li:hover {
+    color: #BA601B;
+    cursor: pointer;
+}
+
+.portrets .portret {
+    display: none;
+}
+
+.portrets .portret.active {
+    display: block;
+}
+
+content .content_taro {
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    top: 45px;
+    position: absolute;
+    text-align: justify;
+}
+
+hr {
+    color: #394B5E;
+    background: #394B5E;
+    border: none;
+    height: 1px;
+}
+
+.tbl_taro {
+    margin: 10px auto;
+    border-collapse: collapse;
+    min-width: 900px;
+    max-width: 970px;
+    width: 100%;
+}
+
+.tbl_taro.comp {
+    min-width: 600px;
+    max-width: 620px;
+    width: 100%;
+}
+
+#tblTaro tr td {
+    height: 180px;
+    width: 10%;
+    text-align: center;
+}
+
+#tblTaro img {
+    height: 160px;
+    margin: 10px 5px;
+}
+
+.tdColored {
+    background: #8190A0;
+}
+
+.imgContainer {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+}
+
+.imgContainer:hover::after {
+    width: 92px;
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 8%; top: 90%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
+    font-family: "Comic Sans MS", sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+    color: black;
+}
+
+.content_taro .result {
+    padding: 10px 5px 55px 5px;
+    text-align: justify;
+    line-height: 1.3em;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 16pt !important;
+}
+
+.content_taro .result .pos_H {
+    margin-top: 30px;
+}
+
+.content_taro .result .pos_H p,
+.content_taro .result div div:not(.pos_info) {
+    display: none;
+}
+
+.content_taro .portrets .portret .result .suits div {
+    display: block;
+    margin: 30px 0 15px;
+}
+
+.content_taro .result .info,
+.content_taro .result .pos_H p.active,
+.content_taro .result div div.active {
+    display: block;
+}
+
+.content_taro .result .comp.pos_4 div p:nth-child(2) {
+    text-align: center;
+}
+
+.content_taro .result h2 {
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.content_taro .result h3 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.content_taro .result > div > div:not(:first-child) p:first-child {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.content_taro .result > div > div.s p:first-child {
+    font-weight: normal;
+}
+
+/* Taro INFO */
+
+.tab_res > div {
+    display: none;
+}
+
+.tab_res > div.active {
+    display: block;
+}
+
+img.card_taro {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.tabs h3 {
+    font-weight: bold;
+}
+
+/* MAK Cards (new) */
+
+content .content_cards {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 800px;
+}
+
+content .content_cards p {
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+/* MAK Cards navs */
+
+main.cards .nav_cards {
+    width: 100%;
+    min-height: 50px;
+    position: relative;
+}
+
+main.cards .nav_cards:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+main.cards .half {
+    width: 50%;
+    position: relative;
+    float: left;
+    padding: 20px 0 15px;
+    z-index: 10;
+}
+
+main.cards .half:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+main.cards .half .btn_random {
+    background: #667E98;
+    color: #C7D3DF;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    width: 97%;
+    float: right;
+}
+
+main.cards .half .btn_random:hover {
+    cursor: pointer;
+    color: white;
+    background: #344353;
+}
+
+/* MAK Packs selecting */
+.selectbox {
+    width: 97%;
+    vertical-align: middle;
+    cursor: pointer;
+    z-index: 50;
+    position: relative;
+}
+.selectbox .select {
+    width: 100%;
+    height: 39px;
+    padding: 0 45px 0 10px;
+    line-height: 39px;
+    font-size: 1em;
+    font-weight: 400;
+    background: #D9E1E9;
+    color: #344353;
+    border: 1px solid #D9E1E9;
+    z-index: 50;
+    position: relative;
+}
+.selectbox.focused .select {
+    border: 1px solid #344353;
+    z-index: 50;
+    position: relative;
+}
+.selectbox .select .text {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    z-index: 50;
+    position: relative;
+}
+.selectbox .trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 100%;
+    border-left: none;
+}
+.selectbox .trigger .arrow {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #344353;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.selectbox:hover .arrow {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.selectbox .dropdown {
+    top: 39px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #D9E1E9;
+    border: 1px solid #C7D3DF;
+    z-index: 500;
+    position: relative;
+}
+.selectbox li {
+    height: 39px;
+    line-height: 39px;
+    padding: 0 10px;
+    color: #344353;
+    font-size: 1em;
+    font-weight: 300;
+    z-index: 500;
+    position: relative;
+}
+.selectbox li.selected {
+    background: #495D72;
+    color: white;
+}
+.selectbox li:hover {
+    background: #495D72;
+    color: white;
+}
+.selectbox li.disabled {
+    color: #858585;
+}
+.selectbox li.disabled:hover {
+    background: none;
+}
+
+/* MAK Cards scroller */
+
+main.cards .cds {
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* горизонтальная полоса прокрутки */
+.jspHorizontalBar {
+    position: absolute;
+    top: 0;  /* можно прижать к нижнему или верхнему краю */
+    width: 100%;
+    height: 20px;  /* высота слушит шириной полосы прокрутки */
+    background: red;
+}
+
+/* полоска, по которой бегает ползунок */
+.jspTrack {
+    background: #DDE5ED;  /* цвет полосы, или фоновый рисунок  */
+    position: relative;
+}
+
+/* сам ползунок */
+.jspDrag {
+    background: #7F98B2;  /* цвет ползунка, или фоновый рисунок  */
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+/* стрелки для прокрутки */
+.jspArrow {
+    background: #495D72;  /* фон стрелки */
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+}
+
+.jspHorizontalBar .jspArrow {
+    width: 40px;
+    float: left;
+    height: 100%;
+}
+
+.jspArrowLeft {
+    background: #495D72 url(../img/arrow_left.png) no-repeat;
+    background-position: 15px;
+}
+
+.jspArrowRight {
+    background: #495D72 url(../img/arrow_right.png) no-repeat;
+    background-position: 15px;
+}
+
+/* стили для неактивной стрелки */
+.jspArrow.jspDisabled {
+    cursor: default;
+    background: #344353;
+}
+
+main.cards .cds .pics-wrapper {
+    width: 16500px;
+    height: 235px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    z-index: 5;
+}
+
+main.cards .cds .pics {
+    width: 100%;
+    height: 267px;
+    overflow: auto;
+    position: relative;
+    z-index: 5;
+}
+
+main.cards .cds .pics img {
+    display: inline-block;
+    outline: 1px solid #6D7A87;
+    height: 225px;
+    margin: 5px;
+    z-index: 500;
+}
+
+main.cards .cds .pics img:first-child {
+    margin-left: 1px;
+}
+
+main.cards .cds .pics img:last-child {
+    margin-right: 1px;
+}
+
+main.cards .cds .pics img:hover {
+    border: 3px solid #6D7A87;
+    cursor: pointer;
+}
+
+main.cards .cds .pics img.chosen {
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+    filter: sepia(100%);
+    border: 3px solid #6D7A87;
+}
+
+main.cards .cds .pics.p47 img,
+main.cards .cds .pics.p21 img,
+main.cards .cds .pics.p1 img {
+    width: 150px;
+}
+
+main.cards .cds .pics.p25 img,
+main.cards .cds .pics.p2 img {
+    width: 160px;
+}
+
+main.cards .cds .pics.p3 img {
+    width: 158px;
+}
+
+main.cards .cds .pics.p36 img,
+main.cards .cds .pics.p5 img,
+main.cards .cds .pics.p4 img {
+    width: 321px;
+}
+
+main.cards .cds .pics.p11 img,
+main.cards .cds .pics.p6 img {
+    width: 152px;
+}
+
+main.cards .cds .pics.p28 img {
+    width: 326px;
+}
+
+main.cards .cds .pics.p7 img {
+    width: 155px;
+}
+
+main.cards .cds .pics.p8 img {
+    width: 153px;
+}
+
+main.cards .cds .pics.p20 img,
+main.cards .cds .pics.p10 img,
+main.cards .cds .pics.p9 img {
+    width: 162px;
+}
+
+main.cards .cds .pics.p18 img,
+main.cards .cds .pics.p12 img {
+    width: 131px;
+}
+
+main.cards .cds .pics.p13 img {
+    width: 129px;
+}
+
+main.cards .cds .pics.p15 img,
+main.cards .cds .pics.p14 img {
+    width: 132px;
+}
+
+main.cards .cds .pics.p16 img {
+    width: 135px;
+}
+
+main.cards .cds .pics.p17 img {
+    width: 137px;
+}
+
+main.cards .cds .pics.p19 img {
+    width: 159px;
+}
+
+main.cards .cds .pics.p22 img {
+    width: 153px;
+}
+
+main.cards .cds .pics.p24 img,
+main.cards .cds .pics.p23 img {
+    width: 152px;
+}
+
+main.cards .cds .pics.p26 img {
+    width: 149px;
+}
+
+main.cards .cds .pics.p27 img {
+    width: 136px;
+}
+
+main.cards .cds .pics.p30 img,
+main.cards .cds .pics.p29 img {
+    width: 146px;
+}
+
+main.cards .cds .pics.p31 img {
+    width: 148px;
+}
+
+main.cards .cds .pics.p32 img {
+    width: 147px;
+}
+
+main.cards .cds .pics.p33 img {
+    width: 163px;
+}
+
+main.cards .cds .pics.p34 img {
+    width: 230px;
+}
+
+main.cards .cds .pics.p35 img {
+    width: 151px;
+}
+
+main.cards .cds .pics.p37 img {
+    width: 124px;
+}
+
+main.cards .cds .pics.p38 img {
+    width: 113px;
+}
+
+main.cards .cds .pics.p39 img {
+    width: 155px;
+}
+
+main.cards .cds .pics.p40 img {
+    width: 163px;
+}
+
+main.cards .cds .pics.p41 img {
+    width: 190px;
+}
+
+main.cards .cds .pics.p44 img,
+main.cards .cds .pics.p43 img,
+main.cards .cds .pics.p42 img {
+    width: 150px;
+}
+
+main.cards .cds .pics.p45 img {
+    width: 118px;
+}
+
+main.cards .cds .pics.p46 img {
+    width: 126px;
+}
+
+/* MAK Table */
+
+.table {
+    width: 100%;
+    min-height: 1500px;
+    position: relative;
+    overflow: hidden;
+    background: #DDE5ED;
+    padding: 5px;
+}
+
+.table .new_div {
+    padding: 8px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    overflow: hidden;
+    height: 241px;
+    background: #F9F9F9;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.table .new_div .btn {
+    position: absolute;
+    opacity: 0;
+}
+
+.table .new_div .btn.close {
+    background: #AFBDCA;
+    top: 8px;
+    right: 8px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.table .new_div:hover .btn {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.table .new_img {
+    display: block;
+    outline: 1px solid #6D7A87;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* CALENDAR */
+
+.calendar {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.calendar .month {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+.calendar .month .m_name {
+    position: relative;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #8091A2;
+    z-index: 10;
+}
+
+.calendar table {
+    position: relative;
+}
+
+.calendar table tr {
+    height: 40px;
+}
+
+.calendar table tr td,
+.calendar table tr th {
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #B7C4D1;
+    width: 40px;
+}
+
+.calendar table tr th {
+    color: #6F7F90;
+    height: 40px;
+}
+
+.op_light {
+    background: #B8C5D2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 60px;
+    opacity: .3;
+}
+
+.op_dark {
+    background: #A9B7C5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 21px;
+    height: 40px;
+    opacity: .3;
+}
+
+.year {
+    position: fixed;
+    z-index: -1;
+    text-align: center;
+    top: 35%;
+    left: 45%;
+    width: 740px;
+    height: 320px;
+    margin-left: -260px;
+    margin-top: -160px;
+    font-size: 20em;
+    font-weight: bold;
+    color: #18212A;
+    opacity: .06;
+}
+
+.today {
+    border: 2px solid #E84141;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    z-index: 20;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.art:hover::after,
+.today:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: -55%; top: 110%; /* Положение подсказки */
+    z-index: 50; /* Отображаем подсказку поверх других элементов */
+    background: black; /* Полупрозрачный цвет фона */
+    font-family: "Comic Sans MS", sans-serif; /* Гарнитура шрифта */
+    font-size: 14px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid transparent; /* Параметры рамки */
+    border-radius: 10px;
+    color: #E5EBF1;
+    overflow: hidden;
+    min-height: 29px;
+    font-weight: normal;
+}
+
+.art:hover {
+    cursor: pointer;
+}
+
+.art {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 11px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.purnima {
+    background: #F0CE61; /* Для старых браузеров */
+    background: radial-gradient(circle, #F0E59A, #F1AB38);
+    border: 1px solid #F1AB38;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.amavasya {
+    background: #799BD8; /* Для старых браузеров */
+    background: radial-gradient(circle, #B7C6E1, #5C78AA);
+    border: 1px solid #5C78AA;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.shiva {
+    background: #A47EBF; /* Для старых браузеров */
+    background: radial-gradient(circle, #CEAEE5, #9B78B3);
+}
+
+.eka {
+    background: #8DB1C5; /* Для старых браузеров */
+    background: radial-gradient(circle, #CFD9E3, #8DB1C5);
+}
+
+.dark {
+    background: black; /* Для старых браузеров */
+    background: radial-gradient(circle, #4E647A, black);
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+}
+
+.sun {
+    background: #F59C3F; /* Для старых браузеров */
+    background: radial-gradient(circle, #FCC080, #C6290F);
+    border: 1px solid #C6290F;
+    border-radius: 50%;
+    padding: 8px;
+    color: #8C2615;
+    font-weight: bold;
+}
+
+.eq {
+    background: #E446AB; /* Для старых браузеров */
+    background: radial-gradient(circle, #EABBD9, #E446AB);
+    border: 1px solid #E446AB;
+    border-radius: 50%;
+    padding: 8px;
+    color: #8F366F;
+    font-weight: bold;
+}
+
+.nav {
+    background: #ADDD5C; /* Для старых браузеров */
+    background: radial-gradient(circle, #E0F396, #9CCF47);
+}
+
+.kran {
+    color: #E84141;
+    font-weight: bold;
+}
+
+.diva {
+    background: #EEED6D; /* Для старых браузеров */
+    background: radial-gradient(circle, #F4F399, #EFD11D);
+}
+
+.ganesh {
+    background: #FCCE5C; /* Для старых браузеров */
+    background: radial-gradient(circle, #FDD767, #E84141);
+    border: 2px solid #E84141;
+    color: #C11111;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.akshaya {
+    background: #F89169; /* Для старых браузеров */
+    background: radial-gradient(circle, #F89169, #A83E3E);
+    border: 2px solid #A83E3E;
+    padding: 8px;
+    color: #892E2E;
+}
+
+
+/* Астрология */
+
+.nav_arts {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.nav_arts li {
+    width: 20%;
+    min-width: 200px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .9em;
+    background: #BDCAD6;
+    margin: 5px 2px;
+    padding: 5px;
+}
+
+.nav_arts li:hover {
+    cursor: pointer;
+    color: white;
+    background: #74879B;
+}
+
+.nav_arts li.active_2 {
+    background: #9FB3C7;
+    color: #DFE5EA;
+    pointer-events: none;
+}
+
+.nav_arts li.active_2:hover {
+    cursor: default;
+    background: #9FB3C7;
+    color: #DFE5EA;
+
+}
+
+.text_arts {
+    overflow: hidden;
+    position: relative;
+    line-height: 1.3em;
+    padding: 5px;
+}
+
+.text_arts > div {
+    display: none;
+}
+
+.text_arts > div.active_2 {
+    display: block;
+}
+
+
+
+
