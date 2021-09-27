@@ -8,6 +8,7 @@ function change_pack(num_pack) {
     var num_pack = num_pack; // Номер колоды
     var folder = ''; // Папка из которой достаем карты
     var cards = 0; // Количество карт
+    var card_width = 0;
     switch (num_pack) {
         case '1':
             folder = '/1_time/';
@@ -197,6 +198,21 @@ function change_pack(num_pack) {
             folder = '/47_some/';
             cards = 113;
             break;
+        case '48':
+            folder = '/48_scarabeo/';
+            cards = 78;
+            card_width = 127;
+            break;
+        case '49':
+            folder = '/49_osho/';
+            cards = 81;
+            card_width = 150;
+            break;
+        case '50':
+            folder = '/50_gothic/';
+            cards = 80;
+            card_width = 134;
+            break;
     } // База данных (а что? Бека-то нет)
 
     // Генерим новую колоду в соответствии с выбранными данными
@@ -217,8 +233,14 @@ function change_pack(num_pack) {
         $('#pics').addClass('pics');
         $('#pics').addClass(cl);
 
-        var widthCard = parseInt($('.pics img:first-child').css('width')) + 10;
-        var widthCont = (widthCard * cards) + 'px';
+        if (card_width > 0) {
+            card_width = card_width;
+        } else {
+            card_width = parseInt($('.pics img:first-child').css('width'));
+        }
+
+        var widthCards = (card_width + 10) * cards;
+        var widthCont = widthCards + 'px';
 
         $('.pics-wrapper').css('width', widthCont);
         $('.jspPane').css('left', '0px');
