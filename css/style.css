@@ -58,7 +58,7 @@ ol, ul {
 
 main {
     width: 100%;
-    min-height: 800px;
+    min-height: 500px;
     height: 100%;
 }
 
@@ -108,7 +108,7 @@ ul.main_menu li a.active {
 
 content {
     width: 100%;
-    min-height: 800px;
+    min-height: 500px;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -124,7 +124,7 @@ content .content {
     position: relative;
     text-align: justify;
     background: #C7D3DF;
-    min-height: 800px;
+    min-height: 500px;
     z-index: 4;
 }
 
