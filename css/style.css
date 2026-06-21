@@ -48,49 +48,11 @@ ol, ul {
     list-style: none;
 }
 
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-a {
-    text-decoration: none;
-    color: #394B5E;
-}
-
-a:hover {
-    color: #BA601B;
-}
-
-.link {
-    font-weight: bold;
-    font-size: 1.3em;
-}
-
-.links {
-    text-align: center;
-}
-
-.links a {
-    margin: 10px 30px;
-}
-
 
 /* MAIN */
 
@@ -103,12 +65,6 @@ main {
 nav {
     width: 100%;
     height: 40px;
-    background: black;
-    color: #E5EBF1;
-}
-
-nav ul li {
-    float: left;
 }
 
 nav ul li a {
@@ -118,10 +74,6 @@ nav ul li a {
     font-size: .9em;
     text-transform: uppercase;
     font-family: "Josefin Sans", sans-serif;
-}
-
-nav ul li a:hover {
-    color: #FFE891;
 }
 
 nav ul.main_menu {
@@ -147,24 +99,6 @@ nav ul.main_menu li:first-child a span {
     font-size: 1.3em;
 }
 
-ul.main_menu li:first-child a.active {
-    cursor: default;
-    pointer-events: none;
-}
-
-ul.main_menu li:first-child a.active span {
-    background: #86A0BC;
-    cursor: default;
-}
-
-nav ul.main_menu li:first-child a.active:hover span {
-    background: #86A0BC;
-}
-
-nav ul.main_menu li:first-child a:hover span {
-    background: #FFE891;
-}
-
 ul.user_menu li a.active,
 ul.main_menu li a.active {
     color: #86A0BC;
@@ -184,16 +118,6 @@ body.mak {
     background: #E5EBF1;
 }
 
-.latka {
-    position: absolute;
-    background: #C7D3DF;
-    z-index: 3;
-    top: 40px;
-    right: 0;
-    left: 250px;
-    bottom: 0;
-}
-
 content .content {
     margin-left: 250px;
     padding: 10px;
@@ -204,29 +128,11 @@ content .content {
     z-index: 4;
 }
 
-content .content h3 {
-    margin: 15px;
-}
-
-content .content h3 a {
-    width: 300px;
-    text-align: center;
-}
 
 content .content p {
     margin: 5px 5px 10px 5px;
     position: relative;
     line-height: 1.5 !important;
-}
-
-.read_more {
-    font-weight: bold;
-    margin-left: 5px;
-}
-
-.read_more:hover {
-    cursor: pointer;
-    color: #BA601B;
 }
 
 .bold {
@@ -239,60 +145,6 @@ content .content p {
 
 .center {
     text-align: center;
-}
-
-content .content ul {
-    margin: 5px 5px 10px 25px;
-}
-
-content .content ul li {
-    list-style-type: circle;
-    line-height: 1.3;
-}
-
-content .content table.simple {
-    margin: 10px;
-}
-
-content .content table.simple tr td {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-content .nav_middle {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    bottom: 0;
-    background: #E5EBF1;
-    color: #556F8A;
-    width: 250px;
-    z-index: 5;
-    min-height: 800px;
-}
-
-content .nav_middle .mak_list li a {
-    color: #2E3B49;
-    display: block;
-    padding: 7px;
-    font-size: 13pt !important;
-}
-
-content .nav_middle .mak_list li a:hover {
-    color: white;
-    background: #74879B;
-}
-
-content .nav_middle .mak_list li a.active {
-    color: white;
-    background: #C7D3DF;
-    cursor: default;
-}
-
-content .nav_middle .mak_list li a.active:hover {
-    color: white;
-    background: #C7D3DF;
-    cursor: default;
 }
 
 /* MAK */
@@ -344,25 +196,6 @@ h3 {
     font-size: 1.4em;
 }
 
-/* Cards Sizes */
-
-content .content_mak ul.mak_1.time li,
-content .content_mak ul.mak_1.time li img {
-    width: 290px;
-    height: 435px;
-}
-
-content .content_mak ul.mak_1.person li,
-content .content_mak ul.mak_1.person li img {
-    width: 290px;
-    height: 407px;
-}
-
-content .content_mak ul.mak_1.oh li,
-content .content_mak ul.mak_1.oh li img {
-    width: 290px;
-    height: 422px;
-}
 
 /* Cards */
 
@@ -665,152 +498,6 @@ main.cards .cds .pics img.chosen {
     border: 3px solid #6D7A87;
 }
 
-main.cards .cds .pics.p47 img,
-main.cards .cds .pics.p21 img,
-main.cards .cds .pics.p1 img {
-    width: 150px;
-}
-
-main.cards .cds .pics.p25 img,
-main.cards .cds .pics.p2 img {
-    width: 160px;
-}
-
-main.cards .cds .pics.p3 img {
-    width: 158px;
-}
-
-main.cards .cds .pics.p36 img,
-main.cards .cds .pics.p5 img,
-main.cards .cds .pics.p4 img {
-    width: 321px;
-}
-
-main.cards .cds .pics.p11 img,
-main.cards .cds .pics.p6 img {
-    width: 152px;
-}
-
-main.cards .cds .pics.p28 img {
-    width: 326px;
-}
-
-main.cards .cds .pics.p7 img {
-    width: 155px;
-}
-
-main.cards .cds .pics.p8 img {
-    width: 153px;
-}
-
-main.cards .cds .pics.p20 img,
-main.cards .cds .pics.p10 img,
-main.cards .cds .pics.p9 img {
-    width: 162px;
-}
-
-main.cards .cds .pics.p18 img,
-main.cards .cds .pics.p12 img {
-    width: 131px;
-}
-
-main.cards .cds .pics.p13 img {
-    width: 129px;
-}
-
-main.cards .cds .pics.p15 img,
-main.cards .cds .pics.p14 img {
-    width: 132px;
-}
-
-main.cards .cds .pics.p16 img {
-    width: 135px;
-}
-
-main.cards .cds .pics.p17 img {
-    width: 137px;
-}
-
-main.cards .cds .pics.p19 img {
-    width: 159px;
-}
-
-main.cards .cds .pics.p22 img {
-    width: 153px;
-}
-
-main.cards .cds .pics.p24 img,
-main.cards .cds .pics.p23 img {
-    width: 152px;
-}
-
-main.cards .cds .pics.p26 img {
-    width: 149px;
-}
-
-main.cards .cds .pics.p27 img {
-    width: 136px;
-}
-
-main.cards .cds .pics.p30 img,
-main.cards .cds .pics.p29 img {
-    width: 146px;
-}
-
-main.cards .cds .pics.p31 img {
-    width: 148px;
-}
-
-main.cards .cds .pics.p32 img {
-    width: 147px;
-}
-
-main.cards .cds .pics.p33 img {
-    width: 163px;
-}
-
-main.cards .cds .pics.p34 img {
-    width: 230px;
-}
-
-main.cards .cds .pics.p35 img {
-    width: 151px;
-}
-
-main.cards .cds .pics.p37 img {
-    width: 124px;
-}
-
-main.cards .cds .pics.p38 img {
-    width: 113px;
-}
-
-main.cards .cds .pics.p39 img {
-    width: 155px;
-}
-
-main.cards .cds .pics.p40 img {
-    width: 163px;
-}
-
-main.cards .cds .pics.p41 img {
-    width: 190px;
-}
-
-main.cards .cds .pics.p44 img,
-main.cards .cds .pics.p43 img,
-main.cards .cds .pics.p42 img {
-    width: 150px;
-}
-
-main.cards .cds .pics.p45 img {
-    width: 118px;
-}
-
-main.cards .cds .pics.p46 img {
-    width: 126px;
-}
-
 /* MAK Table */
 
 .table {
@@ -866,8 +553,6 @@ main.cards .cds .pics.p46 img {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
 
 /* Modern refresh: added after original styles */
 :root {
@@ -967,11 +652,6 @@ nav ul.main_menu li:first-child a.active {
     background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
     box-shadow: 0 10px 24px rgba(155, 93, 229, 0.25);
     transform: translateY(-1px);
-}
-
-nav ul.main_menu li:first-child a span {
-    margin: 0 !important;
-    color: inherit !important;
 }
 
 content,
@@ -1824,4 +1504,16 @@ main.cards .cds .jspHorizontalBar .jspDrag {
 
 main.cards .cds .jspArrow.jspDisabled {
     background-color: #344353 !important;
+}
+
+/* === Fix HOME menu hover: active first item must turn white too === */
+nav ul.main_menu li:first-child > a.active {
+    pointer-events: auto !important;
+}
+
+nav ul.main_menu li:first-child:hover > a,
+nav ul.main_menu li:first-child:hover > a.active,
+nav ul.main_menu li:first-child > a:hover,
+nav ul.main_menu li:first-child > a.active:hover {
+    color: #fff !important;
 }
