@@ -475,411 +475,6 @@ content .content_mak .new_img:hover {
     cursor: pointer;
 }
 
-/* TESTS */
-content .content p.cent {
-    text-align: center;
-}
-
-content .content ul.test {
-    position: relative;
-    overflow: hidden;
-    float: none;
-    text-align: center;
-    margin: 10px auto;
-}
-
-content .content ul.test li {
-    list-style-type: none;
-    float: none;
-    display: inline-block;
-    margin: 4px 2px;
-}
-
-content .content ul.test li img {
-    outline: 1px solid #6D7A87;
-}
-
-content .content ul.test li img:hover {
-    border: 3px solid #6D7A87;
-    cursor: pointer;
-}
-
-content .content ul.test li img.active {
-    -webkit-filter: sepia(100%);
-    -moz-filter: sepia(100%);
-    -o-filter: sepia(100%);
-    -ms-filter: sepia(100%);
-    filter: sepia(100%);
-    border: 3px solid #6D7A87;
-}
-
-content .content .result {
-    padding: 20px;
-    text-align: justify;
-    line-height: 1.5 !important;
-}
-
-content .content .t_img {
-    float: left;
-    margin: 0 20px;
-}
-
-/* Tests no img */
-
-content .content ul.no_img {
-    min-width: 400px;
-    margin: 0;
-    text-align: left;
-}
-
-content .content ul.no_img li {
-    font-size: 1.5em;
-    font-weight: bold;
-    display: block;
-}
-
-content .content ul.no_img li span:hover {
-    color: #BA601B;
-    cursor: pointer;
-}
-
-content .content ul.no_img li span.active {
-    color: #627589;
-    cursor: default;
-}
-
-/* Tests Character Tabs */
-
-.tabs {
-    overflow: hidden;
-}
-
-.tabs .result div:not(.active) {
-    display: none;
-}
-
-.tabs .result div.active {
-    display: block;
-}
-
-body.tests .tabs .result p.bold {
-    text-align: center;
-}
-
-/* Tests Character */
-content .content ul.char {
-    width: 370px;
-}
-
-content .content ul.char li,
-content .content ul.char li img {
-    width: 112px;
-    height: 112px;
-}
-
-/* Tests Kill */
-
-content .content ul.kill {
-    width: 600px;
-}
-
-content .content ul.kill li,
-content .content ul.kill li img {
-    width: 73px;
-    height: 73px;
-}
-
-/* Tests Animals */
-
-content .content ul.anim {
-    width: 843px;
-}
-
-content .content ul.anim li,
-content .content ul.anim li img {
-    width: 200px;
-    height: 200px;
-}
-
-/* Tests Eyes */
-
-content .content ul.eyes {
-    width: 527px;
-}
-
-content .content ul.eyes li,
-content .content ul.eyes li img {
-    width: 165px;
-    height: 165px;
-}
-
-/* Taro IMGS Radio */
-
-content .content ul.taro {
-    width: 100%;
-    max-width: 800px;
-}
-
-content .content ul.taro.minor {
-    max-width: 500px;
-}
-
-content .content ul.taro li,
-content .content ul.taro li img {
-    width: 63px;
-    height: 100px;
-}
-
-
-/* TARO */
-
-.forms > div {
-    display: none;
-}
-
-.forms > div.active {
-    display: block;
-}
-
-.frm_date {
-    overflow: hidden;
-    text-align: center;
-    margin: 20px auto 0;
-    width: 100%;
-    max-width: 700px;
-}
-
-.frm_date p {
-    margin-bottom: 10px;
-}
-
-.frm_date input {
-    width: 200px;
-    height: 40px;
-    padding: 12px;
-    border-radius: 0;
-    border: 0;
-    margin: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Comic Sans MS", sans-serif;
-}
-
-.frm_date .btn_taro {
-    display: inline-block;
-    width: 200px;
-    height: 40px;
-    padding: 12px;
-    margin: 20px;
-    text-transform: uppercase;
-    background: #667E98;
-    color: #C7D3DF;
-    text-align: center;
-}
-
-.frm_date .btn_taro:hover {
-    cursor: pointer;
-    color: white;
-    background: #344353;
-}
-
-.taroNav {
-    width: 800px;
-    margin: 20px auto;
-    height: 40px;
-    text-align: center;
-    color: #394B5E;
-    font-weight: bold;
-    display: block;
-}
-
-.taroNav li.active {
-    color: #627589;
-    cursor: default;
-    pointer-events: none;
-}
-
-.taroNav li.active:hover {
-    color: #627589;
-    cursor: default;
-}
-
-.taroNav li {
-    color: #394B5E;
-    font-size: .9em;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.taroNav li:hover {
-    color: #BA601B;
-    cursor: pointer;
-}
-
-.portrets .portret {
-    display: none;
-}
-
-.portrets .portret.active {
-    display: block;
-}
-
-content .content_taro {
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    top: 45px;
-    position: absolute;
-    text-align: justify;
-}
-
-hr {
-    color: #394B5E;
-    background: #394B5E;
-    border: none;
-    height: 1px;
-}
-
-.tbl_taro {
-    margin: 10px auto;
-    border-collapse: collapse;
-    min-width: 900px;
-    max-width: 970px;
-    width: 100%;
-}
-
-.tbl_taro.comp {
-    min-width: 600px;
-    max-width: 620px;
-    width: 100%;
-}
-
-#tblTaro tr td {
-    height: 180px;
-    width: 10%;
-    text-align: center;
-}
-
-#tblTaro img {
-    height: 160px;
-    margin: 10px 5px;
-}
-
-.tdColored {
-    background: #8190A0;
-}
-
-.imgContainer {
-    display: inline-block; /* Строчно-блочный элемент */
-    position: relative; /* Относительное позиционирование */
-}
-
-.imgContainer:hover::after {
-    width: 92px;
-    content: attr(data-title); /* Выводим текст */
-    position: absolute; /* Абсолютное позиционирование */
-    left: 8%; top: 90%; /* Положение подсказки */
-    z-index: 1; /* Отображаем подсказку поверх других элементов */
-    background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
-    font-family: "Comic Sans MS", sans-serif; /* Гарнитура шрифта */
-    font-size: 11px; /* Размер текста подсказки */
-    padding: 5px 10px; /* Поля */
-    border: 1px solid #333; /* Параметры рамки */
-    color: black;
-}
-
-.content_taro .result {
-    padding: 10px 5px 55px 5px;
-    text-align: justify;
-    line-height: 1.3em;
-    max-width: 1100px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    font-size: 16pt !important;
-}
-
-.content_taro .result .pos_H {
-    margin-top: 30px;
-}
-
-.content_taro .result .pos_H p,
-.content_taro .result div div:not(.pos_info) {
-    display: none;
-}
-
-.content_taro .portrets .portret .result .suits div {
-    display: block;
-    margin: 30px 0 15px;
-}
-
-.content_taro .result .info,
-.content_taro .result .pos_H p.active,
-.content_taro .result div div.active {
-    display: block;
-}
-
-.content_taro .result .comp.pos_4 div p:nth-child(2) {
-    text-align: center;
-}
-
-.content_taro .result h2 {
-    font-weight: bold;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.content_taro .result h3 {
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.content_taro .result > div > div:not(:first-child) p:first-child {
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.content_taro .result > div > div.s p:first-child {
-    font-weight: normal;
-}
-
-/* Taro INFO */
-
-.tab_res > div {
-    display: none;
-}
-
-.tab_res > div.active {
-    display: block;
-}
-
-img.card_taro {
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-.tabs h3 {
-    font-weight: bold;
-}
-
-/* MAK Cards (new) */
-
-content .content_cards {
-    padding: 10px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    min-height: 800px;
-}
-
-content .content_cards p {
-    text-align: justify;
-    line-height: 1.3em;
-}
-
 /* MAK Cards navs */
 
 main.cards .nav_cards {
@@ -1833,7 +1428,7 @@ select {
 
 .content.intro p {
     margin: 0 0 18px;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.65;
     text-align: left;
     color: var(--text);
@@ -2028,7 +1623,7 @@ main.cards .cds .pics-wrapper img {
 .content.intro p,
 .content.intro.contact_page p {
     margin: 0 0 18px !important;
-    font-size: 18px !important;
+    font-size: 22px !important;
     line-height: 1.65 !important;
     text-align: left !important;
     color: var(--text) !important;
@@ -2069,3 +1664,135 @@ main.cards .cds .pics.p2 img {
     flex: 0 0 auto !important;
 }
 
+main.cards .cds .pics.p3 img {
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 980px) {
+    main {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        border-radius: 26px;
+    }
+
+    content {
+        padding: 22px;
+    }
+
+    .content.intro,
+    .content.intro.contact_page {
+        max-width: 100% !important;
+        padding: 34px 32px !important;
+    }
+
+    main.cards .nav_cards {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    nav {
+        position: static;
+        padding: 12px 10px;
+    }
+
+    nav ul.main_menu,
+    nav .user_menu {
+        width: 100% !important;
+        gap: 8px;
+    }
+
+    nav ul li a,
+    nav ul.main_menu li:first-child a {
+        min-height: 38px;
+        padding: 10px 12px !important;
+        font-size: 13px !important;
+        white-space: normal;
+        text-align: center;
+    }
+
+    content {
+        padding: 14px;
+    }
+
+    .content.intro,
+    .content.intro.contact_page {
+        padding: 26px 20px !important;
+        border-radius: 22px !important;
+    }
+
+    .content.intro h1,
+    .content.intro h2,
+    .content.intro.contact_page h1,
+    .content.intro.contact_page h2 {
+        font-size: 28px !important;
+    }
+
+    .social_icons {
+        gap: 18px;
+    }
+
+    .social_icons a {
+        width: 58px;
+        height: 58px;
+    }
+
+    .author_today_link a {
+        max-width: 100%;
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+
+    main.cards .nav_cards {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    main.cards .half,
+    main.cards .half.second {
+        float: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .select_outer,
+    span.selectbox,
+    span.selectbox .select,
+    span.selectbox .dropdown {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .btn_random {
+        width: 100% !important;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    main.cards .cds {
+        width: 100% !important;
+        overflow: hidden;
+    }
+
+    main.cards .cds .pics {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+}
