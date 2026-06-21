@@ -1517,3 +1517,41 @@ nav ul.main_menu li:first-child > a:hover,
 nav ul.main_menu li:first-child > a.active:hover {
     color: #fff !important;
 }
+
+
+/* === Donate copy inline text === */
+.donate_block {
+    margin: 24px 0 28px;
+}
+
+.donate_block p {
+    margin-bottom: 8px;
+}
+
+.copy_donate {
+    display: inline;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: inherit;
+    letter-spacing: .03em;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.copy_donate:hover,
+.copy_donate:focus {
+    font-weight: bold;
+    background: transparent;
+    color: inherit;
+    outline: none;
+}
+
+.copy_message {
+    min-height: 20px;
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: .85;
+}

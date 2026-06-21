@@ -252,4 +252,55 @@ $(document).ready(function() {
         $(imgID).addClass('chosen');
         new_img(num, num_pack, imgID);
     });
+
+    $('body').on('keydown', '.copy_donate', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            $(this).trigger('click');
+        }
+    });
+
+    $('body').on('click', '.copy_donate', function() {
+        var button = $(this);
+        var text = button.attr('data-copy');
+        var message = button.closest('.donate_block').find('.copy_message');
+
+        function showMessage(value) {
+            message.text(value);
+            window.setTimeout(function() {
+                message.text('');
+            }, 2200);
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(function() {
+                button.attr('title', 'Скопировано!');
+                showMessage('Номер ЮMoney скопирован.');
+                window.setTimeout(function() {
+                    button.attr('title', 'Нажмите, чтобы скопировать');
+                }, 2200);
+            }).catch(function() {
+                showMessage('Не удалось скопировать автоматически. Выделите номер вручную.');
+            });
+        } else {
+            var temp = $('<textarea>');
+            temp.val(text).css({position: 'fixed', left: '-9999px', top: '-9999px'});
+            $('body').append(temp);
+            temp[0].select();
+
+            try {
+                document.execCommand('copy');
+                button.attr('title', 'Скопировано!');
+                showMessage('Номер ЮMoney скопирован.');
+                window.setTimeout(function() {
+                    button.attr('title', 'Нажмите, чтобы скопировать');
+                }, 2200);
+            } catch (e) {
+                showMessage('Не удалось скопировать автоматически. Выделите номер вручную.');
+            }
+
+            temp.remove();
+        }
+    });
+
 });
