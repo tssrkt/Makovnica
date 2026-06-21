@@ -22,10 +22,8 @@ function get_pack(num_pack) {
 // выбранной колоды и фактической ширине карточек после вставки в DOM.
 function calculate_tray_width(num_pack) {
     num_pack = get_pack(num_pack);
-
     var pack = MAK_PACKS[num_pack];
     var CARD_STEP = 160; // 150px width + 5px left margin + 5px right margin
-
     return pack.cards * CARD_STEP;
 }
 
