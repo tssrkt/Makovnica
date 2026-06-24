@@ -8,7 +8,9 @@ var MAK_PACKS = {
     '2': {folder: '2_person', cards: 100},
     '3': {folder: '3_know', cards: 48},
     '4': {folder: '4_chest', cards: 64},
-    '5': {folder: '5_saga', cards: 55}
+    '5': {folder: '5_saga', cards: 55},
+    '6': {folder: '6_neuro', cards: 100},
+    '7': {folder: '7_oskolki', cards: 70}
 };
 
 var api = null;
