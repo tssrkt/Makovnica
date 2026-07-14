@@ -24,6 +24,26 @@ var CURRENT_PACK = '1';
 var GLOBAL_FACE_MODE = 'face';
 var DECK_VIEW_MODE = 'strip';
 var SAVED_TRAY_SCROLL_X = 0;
+var TOP_WORKSPACE_CARD_Z = 10;
+var WORKSPACE_CARD_Z_LIMIT = 1000;
+
+function normalize_workspace_card_layers() {
+    var cards = $('.table .new_div').get().sort(function(a, b) {
+        return (parseInt($(a).css('z-index'), 10) || 0) - (parseInt($(b).css('z-index'), 10) || 0);
+    });
+
+    TOP_WORKSPACE_CARD_Z = 10;
+    $(cards).each(function() {
+        TOP_WORKSPACE_CARD_Z += 1;
+        $(this).css('z-index', TOP_WORKSPACE_CARD_Z);
+    });
+}
+
+function bring_workspace_card_to_front(card) {
+    if (TOP_WORKSPACE_CARD_Z >= WORKSPACE_CARD_Z_LIMIT) normalize_workspace_card_layers();
+    TOP_WORKSPACE_CARD_Z += 1;
+    $(card).css('z-index', TOP_WORKSPACE_CARD_Z);
+}
 
 function get_pack(num_pack) {
     num_pack = String(num_pack || '1');
@@ -212,6 +232,7 @@ function new_img(num, num_pack, imgID) {
     var this_div_id = '#pack_' + num_pack + '_card_' + num;
 
     $(this_div_id).css({width: widthCard, height: heightCard});
+    bring_workspace_card_to_front($(this_div_id));
 
     var w = parseInt($(this_div_id).css('width'), 10);
     var h = parseInt($(this_div_id).css('height'), 10);
@@ -236,6 +257,9 @@ function new_img(num, num_pack, imgID) {
 
     $(this_div_id).draggable({
         cancel: '.workspace-card-controls, .workspace-card-action',
+        start: function() {
+            bring_workspace_card_to_front(this);
+        },
         drag: function(e, ui) {
             var max_left = $('.table').innerWidth() - $(this).outerWidth() - workspace_controls_width;
             ui.position.left = Math.min(ui.position.left, Math.max(0, max_left));
