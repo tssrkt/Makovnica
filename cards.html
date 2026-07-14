@@ -24,17 +24,18 @@
 <!-- /Yandex.Metrika counter -->
 </head>
 <body class="cards">
-<main class="cards">
+<header class="site-shell">
 <nav>
 <ul class="main_menu"><li><a href="index.html">ГЛАВНАЯ</a></li><li><a class="active" href="cards.html">Метафорические карты</a></li><li><a href="contact.html">Контакты</a></li></ul>
 </nav>
+</header>
+<main class="cards cards-workspace">
 <content>
 <div class="content_cards">
-<p></p>
 <div class="nav_cards">
     <div class="half select">
         <div class="select_outer">
-            <select id="packs" name="">
+            <select id="packs">
             	<option value="1">Сила Времени (AI-версия)</option>
                 <option value="4">Из сундука прошлого (AI-версия)</option>
             	<option value="3">Колода Знания (AI-версия)</option>
@@ -49,11 +50,15 @@
                 <option value="10">Угловатая синева</option>
                 <option value="11">Забавные зверюшки</option>
             </select>
-            <a class="select_button"></a>
         </div>
     </div>
 <div class="half second">
-<div class="btn_random" id="rnd">Случайная карта</div>
+<div class="deck_actions">
+    <button class="btn_random deck_action" id="face_mode" type="button">FACE</button>
+    <button class="btn_random deck_action" id="rnd" type="button">DOOM</button>
+    <button class="btn_random deck_action" id="view_mode" type="button">MAX</button>
+    <button class="btn_random deck_action" id="mix_cards" type="button">MIX</button>
+</div>
 </div>
 </div>
 <div class="cds">
@@ -162,6 +167,12 @@
 </div>
 </content>
 </main>
+<div class="card-popup" id="card_popup" role="dialog" aria-modal="true" aria-label="Увеличенная карта" aria-hidden="true" hidden>
+    <div class="card-popup-content">
+        <img class="card-popup-image" id="card_popup_image" src="" alt=""/>
+        <button class="card-popup-close" id="card_popup_close" type="button" aria-label="Закрыть">×</button>
+    </div>
+</div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js" type="text/javascript"></script>

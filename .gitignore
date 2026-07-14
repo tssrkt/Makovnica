@@ -1,0 +1,6 @@
+# Temporary files
+temp/
+
+# Служебные папки
+.cards-e2e/
+.idea/
