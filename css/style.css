@@ -537,6 +537,7 @@ main.cards .cds .tray-card-number {
     font-weight: 700;
     line-height: 1;
     text-align: center;
+    white-space: nowrap;
 }
 
 main.cards #pics.tray-expanded {
